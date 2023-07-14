@@ -1,28 +1,11 @@
-
-
-def fibonacci(n):
-#base case 
-    if n <= 1:
-        return n
-
-    return fibonacci(n - 1) + fibonacci(n - 2)
-
-
-def fibonacci_sum_even(n):
-    #base case
-    if n <= 0:
-        return 0
+def sum_digits(n):
+    if n < 0 or n > 9:
+        return "Invalid. Select number between 0-9"
     
-    #get fibonacci values
-    fibonacci_value = fibonacci(n) 
-    #list comprehension sum only even fibonacci values 
-    sum_even_numbers = fibonacci_value if fibonacci_value % 2 == 0 else 0
+    digits = []
+    for i in range(1,5):
+        digits.append(int(str(n) * i))
 
-    #recursive step 
-    return sum_even_numbers + fibonacci_sum_even(n - 1)
+    return sum(digits)
 
-#test case
-
-total_sum = fibonacci_sum_even(100)
-print(total_sum)
-# print(f"The sum of the first 100 even value fibonacci numbers is {total_sum}")
+print(sum_digits(7))
