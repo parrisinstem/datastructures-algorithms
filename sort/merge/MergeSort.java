@@ -42,12 +42,12 @@ public class MergeSort {
 
      public static void main(String[] args) {
         List<Integer> unorderedList1 = new ArrayList<>(Arrays.asList(356, 746, 264, 569, 949, 895, 125, 455));
-        List<Integer> unorderedList2 = new ArrayList<>(Arrays.asList(787, 677, 391, 318, 543, 717, 180, 113, 795, 19, 202, 534, 201, 370, 276, 975, 403, 624, 770, 595, 571, 268, 373));
-        List<Integer> unorderedList3 = new ArrayList<>(Arrays.asList(860, 380, 151, 585, 743, 542, 147, 820, 439, 865, 924, 387));
+        // List<Integer> unorderedList2 = new ArrayList<>(Arrays.asList(787, 677, 391, 318, 543, 717, 180, 113, 795, 19, 202, 534, 201, 370, 276, 975, 403, 624, 770, 595, 571, 268, 373));
+        // List<Integer> unorderedList3 = new ArrayList<>(Arrays.asList(860, 380, 151, 585, 743, 542, 147, 820, 439, 865, 924, 387));
 
         List<Integer> orderedList1 = mergeSort(unorderedList1);
-        List<Integer> orderedList2 = mergeSort(unorderedList2);
-        List<Integer> orderedList3 = mergeSort(unorderedList3);
+        // List<Integer> orderedList2 = mergeSort(unorderedList2);
+        // List<Integer> orderedList3 = mergeSort(unorderedList3);
 
         System.out.println(orderedList1);
     }
